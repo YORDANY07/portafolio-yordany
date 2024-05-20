@@ -31,3 +31,45 @@ body {
     text-wrap: balance;
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.left-column {
+
+  padding: 20px;
+}
+
+.right-column {
+  padding: 20px;
+}
+
+.section h2 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+      grid-template-columns: 1fr;
+  }
+  .left-column,
+  .right-column {
+      padding: 10px;
+  }
+}

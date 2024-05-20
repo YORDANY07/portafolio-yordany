@@ -22,23 +22,33 @@ export default function AboutMe() {
 
             <div className="container bg-gray-300 w-full sm:w-3/4 rounded-lg">
                 <Hero title="Sobre mí"
-                    descriptions={["Lorem ipsum dolor sit amet",
-                 "consectetur adipiscing elit. Phasellus imperdiet...",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet..."]}>
+                    descriptions={["Soy un informático junior que estudia la carrera de "
+                        + "Informatica Empresarial En la Universidad de Costa Rica."
+                        + " Poseo una sólida formación en desarrollo de software, "
+                        + "gestión de bases de datos y administración de redes."
+                        + " Durante mi carrera académica, he participado en "
+                        + "diversos proyectos que me han permitido aplicar mis "
+                        + "conocimientos teóricos en entornos prácticos, "
+                        + "destacando mi capacidad para resolver problemas "
+                        + "y trabajar de manera colaborativa en equipos multidisciplinarios."]}>
                 </Hero>
                 <Hero title="Experiencia"
-                    descriptions={["Experiencia laboral en Empresa XYZ como Desarrollador Web...","sefsefsef"]}>
+                    descriptions={["Participacion en el proyecto de desarrollo de Windows", "Participacion en la fabricacion de la computadora Mackintosh"]}>
                 </Hero>
 
                 <Hero title="Educación"
-                    descriptions={["Título Universitario en Ingeniería Informática...","sefsefsef"]}>
+                    descriptions={["Bachiller en Educacion Media, en el Colegio Nocturno Guaycara",
+                    "Conclusión de Estudios de la Educacion General Básica, en el Colegio Tecnico Profesional Guaycara",
+                    "Conclusión de Estudios del Primero y Segundo Ciclos de la Educacion General Básica, en Escuela KM 24"]}>
                 </Hero>
 
                 <Hero title="Habilidades"
-                    descriptions={["Habilidad 1","Habilidad 2","Habilidad 3"]}>
+                    descriptions={["Resolución de problemas", "Trabajo en equipo", "Aprendizaje continuo"]}>
                 </Hero>
-            
+                <Hero title="Herramientas"
+                    descriptions={["Java 80%", "SQL 50%", "HTML 40%","JavaScript 20%","CSS 10%"]}>
+                </Hero>
+
             </div>
 
         </div>
