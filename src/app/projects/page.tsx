@@ -28,7 +28,7 @@ const ReposPage = () => {
         const data = await res.json();
         setRepos(data);
       } catch (error) {
-        setError(error.message);
+       
       } finally {
         setLoading(false);
       }
