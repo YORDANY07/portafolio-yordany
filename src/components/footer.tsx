@@ -27,7 +27,7 @@ export default function Footer() {
                     height={24}
                     alt="Picture of the author"
                   />
-                  <p className="font-light text-gray-500 ml-4">8945-4597</p>
+                  <p className="font-light text-gray-500 ml-4 hover:text-white">8945-4597</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-4 mt-2">
@@ -38,7 +38,7 @@ export default function Footer() {
                     height={24}
                     alt="Picture of the author"
                   />
-                  <p className="font-light text-gray-500 ml-4">yordany.na04@gmail.com</p>
+                  <p className="font-light text-gray-500 ml-4 hover:text-white">yordany.na04@gmail.com</p>
                 </Link>
               </li>
             </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
                     height={24}
                     alt="Picture of the author"
                   />
-                  <p className="font-light text-gray-500 ml-4">Facebook</p>
+                  <p className="font-light text-gray-500 ml-4 hover:text-white">Facebook</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-4 mt-2">
@@ -66,7 +66,7 @@ export default function Footer() {
                     height={24}
                     alt="Picture of the author"
                   />
-                  <p className="font-light text-gray-500 ml-4">Instagram</p>
+                  <p className="font-light text-gray-500 ml-4 hover:text-white">Instagram</p>
                 </Link>
               </li>
               <li className="flex items-center space-x-4 mt-2">
@@ -77,7 +77,7 @@ export default function Footer() {
                     height={24}
                     alt="Picture of the author"
                   />
-                  <p className="font-light text-gray-500 ml-4">LinkedIn</p>
+                  <p className="font-light text-gray-500 ml-4 hover:text-white">Linked In</p>
                 </Link>
               </li>
             </ul>

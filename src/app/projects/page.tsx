@@ -52,23 +52,36 @@ export default async function ReposPage() {
 
   return (
     <div className="container mx-auto p-4 bg-gray-300 items-center">
-      <h1 className="text-3xl font-bold mb-4 ">GitHub Repositories</h1>
+      <div className='p-4 md:col-span-1'>
+      <h1 className="font-bold text-2xl bg-gray-800 p-4 rounded-lg">Repositorios de GitHub</h1>
+      </div>
       
-        <Slider {...settings} className="w-3/4 bg-gray-800 mb-5 h-full">
-          {repos.map((repo) => (
-            
-            <div key={repo.id} className="bg-gray-100 rounded-lg shadow-md p-6 h-[180px] group-hover:opacity-50">
-              
-              <h2 className="text-xl font-semibold">
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  {repo.name}
-                </a>
+      <Slider {...settings} className="w-3/4 m-5 h-full bg-white rounded-lg mx-10">
+        {repos.map((repo) => (
+          <div className='p-4'>
+            <div key={repo.id} className="bg-gray-800 rounded-lg shadow-md p-6 h-[180px]
+             transition duration-300 ease-in-out transform hover:scale-110 ">
+
+              <h2 className="text-xl font-semibold mb-2 text-cyan-500">
+              {repo.name}
               </h2>
-              <p className="text-gray-700">{repo.description || 'No description available'}</p>
+             
+              <ul>
+                <li className='hover:underline hover:text-cyan-300 inline-block'>
+                  <Link href={repo.html_url}>Ir a GitHub
+                  </Link>
+                </li>
+                <li className='hover:underline hover:text-cyan-300 inline-block'>
+                  <Link href={repo.html_url+"/archive/refs/heads/main.zip"}>Descargar Repositorio
+                  </Link>
+                </li>
+              </ul>
             </div>
-          ))}
-        </Slider>
-     
+          </div>
+
+        ))}
+      </Slider>
+
 
     </div>
   );
