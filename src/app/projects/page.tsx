@@ -21,8 +21,9 @@ const ReposPage = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const username = 'yordany07';
-        const res = await fetch(`https://api.github.com/users/${username}/repos`);
+        // const username = 'yordany07';
+       console.log("user"+process.env.NEXT_PUBLIC_GITHUB_USERNAME);
+        const res = await fetch(`https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos`);
         if (!res.ok) {
           throw new Error('Failed to fetch');
         }
