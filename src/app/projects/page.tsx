@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -42,6 +43,8 @@ const ReposPage = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed:3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -66,15 +69,30 @@ const ReposPage = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="container mx-auto p-4 bg-gray-300 items-center">
-      <div className='p-4 md:col-span-1'>
+    <div className="relative min-h-screen flex items-center justify-center">
+    {/* Fondo con imagen y overlay */}
+    <div className="absolute inset-0">
+      <Image 
+        src="/images/background.png"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="z-0"
+      />
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-50 z-10"></div>
+    </div>
+    
+    {/* Contenido */}
+    <div className="relative z-20 container mx-auto p-4  items-center rounded-lg">
+      <div className='p-4 md:col-span-1 transition duration-300 ease-in-out transform hover:scale-110'>
         <h1 className="font-bold text-2xl bg-gray-800 p-4 rounded-lg">Repositorios de GitHub</h1>
       </div>
       
-      <Slider {...settings} className="w-3/4 m-5 h-full bg-white rounded-lg mx-10">
+      <Slider {...settings} className="w-[75%] m-5 h-full bg-gray-400 rounded-lg mx-10">
         {repos.map((repo) => (
           <div className='p-4' key={repo.id}>
-            <div className="bg-gray-800 rounded-lg shadow-md p-6 h-[180px]
+            <div className="bg-gray-800 rounded-lg shadow-md p-6 h-[200px]
               transition duration-300 ease-in-out transform hover:scale-110 ">
               <h2 className="text-xl font-semibold mb-2 text-cyan-500">
                 {repo.name}
@@ -92,6 +110,7 @@ const ReposPage = () => {
         ))}
       </Slider>
     </div>
+  </div>
   );
 };
 

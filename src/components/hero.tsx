@@ -7,7 +7,7 @@ interface HeroProps {
   }
   export default function Hero(props: HeroProps) {
       return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-500 rounded-lg ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-500 rounded-lg text-justify">
             <div className="p-10 md:col-span-1">
                 <h2 className="font-bold text-lg bg-gray-800 p-4 rounded-lg">{props.title}</h2>
             </div>

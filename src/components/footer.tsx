@@ -20,7 +20,7 @@ export default function Footer() {
             <br />
             <ul>
               <li className="flex items-center space-x-4">
-                <Link href={"tel:89454597"} className="flex items-center">
+                <Link href={"https://wa.me/50689454597"} className="flex items-center">
                   <Image
                     src="/images/phone.png"
                     width={24}
@@ -59,7 +59,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="flex items-center space-x-4 mt-2">
-                <Link href={"https://www.facebook.com/profile.php?id=100006816256748&sk=photos_by"} className="flex items-center">
+                <Link href={"https://www.instagram.com/yordany_cr/"} className="flex items-center">
                   <Image
                     src="/images/instagram.png"
                     width={24}
