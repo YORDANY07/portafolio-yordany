@@ -43,15 +43,15 @@ export default function AboutMe() {
               title="Sobre mí"
               descriptions={[
                 "Soy un informático junior que estudia la carrera de Informatica Empresarial En la Universidad de Costa Rica."
-               + "Poseo una sólida formación en desarrollo de software, gestión de bases de datos y administración de redes."
-               + "Durante mi carrera académica, he participado en diversos proyectos que me han permitido aplicar mis conocimientos teóricos en entornos prácticos, destacando mi capacidad para resolver problemas y trabajar de manera colaborativa en equipos multidisciplinarios."
+               + " Poseo una sólida formación en desarrollo de software, gestión de bases de datos y administración de redes."
+               + " Durante mi carrera académica, he participado en diversos proyectos que me han permitido aplicar mis conocimientos teóricos en entornos prácticos, destacando mi capacidad para resolver problemas y trabajar de manera colaborativa en equipos multidisciplinarios."
               ]}
             />
             <Hero 
               title="Experiencia"
               descriptions={[
-                "Participacion en el proyecto de desarrollo de Windows", 
-                "Participacion en la fabricacion de la computadora Mackintosh"
+                "Participación en el proyecto de desarrollo de Windows", 
+                "Participación en la fabricación de la computadora Mackintosh"
               ]}
             />
             <Hero 

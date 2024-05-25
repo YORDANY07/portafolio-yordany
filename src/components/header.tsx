@@ -19,7 +19,7 @@ export default function Header() {
            
           </div>
 
-          {/* Logo sobre el menú en pantallas pequeñas */}
+         {/* boton para menu responsive */}
           <div className="md:hidden">
            
             <button
@@ -36,17 +36,20 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Menú desplegable */}
+          {/* Menú */}
           <div className={`md:flex flex-wrap items-center ${isOpen ? 'block' : 'hidden'}`}>
             <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full md:w-auto">
-            <Link href="/" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">Inicio</Link>
-              <Link href="/aboutMe" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">Sobre Mi</Link>
-              <Link href="/projects" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">Mis Proyectos</Link>
+            <Link href="/" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">
+              Inicio</Link>
+              <Link href="/aboutMe" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">
+                Curriculum</Link>
+              <Link href="/projects" className="transition duration-300 ease-in-out transform hover:scale-110 hover:underline md:mx-4 my-2 md:my-0">
+                Mis Proyectos</Link>
             </div>
             <div className="bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-lg p-2 md:ml-4">
               <a href="mailto:yordany.na04@gmail.com" className="inline-block">
                 <button className="text-white font-semibold bg-transparent border border-white py-2 px-4 rounded hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out transform hover:scale-110">
-                  Contratame
+                  Contrátame
                 </button>
               </a>
             </div>
